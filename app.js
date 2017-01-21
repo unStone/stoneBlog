@@ -10,6 +10,8 @@ const app = new Koa();
 
 const isProduction = process.env.NODE_ENV === 'production';
 
+console.log(isProduction , process.env.NODE_ENV)
+
 app.use(async (ctx, next) => {
   const start = new Date().getTime();//当前时间
   await next();
@@ -34,9 +36,9 @@ app.use(templating('view', {
 app.use(controller());
  
 AV.init({
-  appId: process.env.LEANCLOUD_APP_ID,
-  appKey: process.env.LEANCLOUD_APP_KEY,
-  masterKey: process.env.LEANCLOUD_APP_MASTER_KEY
+  appId: process.env.LEANCLOUD_APP_ID || '6g80kjuk9DLvKuH9EjszQ5Mj-gzGzoHsz',
+  appKey: process.env.LEANCLOUD_APP_KEY || 'QVk75Xmcfx9J1rGxqKOSjJdW',
+  masterKey: process.env.LEANCLOUD_APP_MASTER_KEY || 'uTf6JwaNqvbbt7iv9MaCNmb4'
 });
 
 // 端口一定要从环境变量 `LEANCLOUD_APP_PORT` 中获取。
