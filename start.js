@@ -8,4 +8,4 @@ register({
 });
 
 //这个地方的require不是弄得原来的方法，而是bable替换掉的方法。
-require('./server.js')
+require('./app.js')
