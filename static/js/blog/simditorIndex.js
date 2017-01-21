@@ -1,6 +1,9 @@
-$(function() {
-   $('.container').height($(window).height())
+var title, abstract, srticleId, data;
 
+$(function() {
+  $('.container').height($(window).height())
+
+  //编辑器样式
   var editor = new Simditor({
     textarea: $('#editor'),
     placeholder: '',
@@ -33,4 +36,29 @@ $(function() {
     pasteImage: false,
     cleanPaste: false
   });
+
+  //事件绑定
+  $('.container').on('click', '.ok', function() {
+    title = $('.title-input').val();
+    abstract = $('.abstract-input').val();
+    srticleId = $('.srticle-id-input').val();
+
+    data = {
+      title: title,
+      abstract: abstract,
+      srticleId: srticleId
+    }
+    $.ajax({
+      type: 'POST',
+      url: '/api/stone/blog/simditor',
+      data: data,
+      success: function(res) {
+        console.log(res);
+      },
+      error: function(err) {
+        console.log(err)
+      }
+    })
+    console.log('ok', title, '@', abstract, '@', srticleId);
+  })
 })

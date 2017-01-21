@@ -105,6 +105,10 @@ ul {list-style: none; padding: 0; }
 	border: 2px solid #999;
 	border-left: 0;
 }
+.article:focus {
+	color: #333;
+	text-decoration: none;
+}
 /*.article:focus {
 	text-decoration: none;
 }*/

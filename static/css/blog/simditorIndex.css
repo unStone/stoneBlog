@@ -13,6 +13,7 @@ body {margin: 0; width: 100%; height: 100%; overflow: hidden}
 	background-position: center center;
 }
 .top {
+  position: relative;
   width: 750px;
   background-color: rgba(255,255,255,.7);
   padding: 10px 0 30px 10px;
@@ -25,14 +26,37 @@ body {margin: 0; width: 100%; height: 100%; overflow: hidden}
   display: inline-block;
   width: 50px;
   text-align: center;
-  border: 1px solid #333;
+  border: 1px solid #888;
   border-radius: 10px;
   background-color: #7cb0cc;
 }
 .srticle-id a:hover {
 	color: #333;
 	text-decoration: none;
-	font-weight: 700;
+}
+.srticle-id a {
+	color: #333;
+	text-decoration: none;
+}
+.ok {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  height: 30px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ok:hover {
+  cursor:pointer
+}
+.article-ok {
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  background-color: #7cb0cc;
 }
 /**
 编辑器样式
