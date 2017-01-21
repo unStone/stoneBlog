@@ -10,13 +10,14 @@ const app = new Koa();
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-console.log(isProduction , process.env.NODE_ENV)
+console.log(isProduction, '1----------------', process.env.NODE_ENV)
 
 app.use(async (ctx, next) => {
   const start = new Date().getTime();//当前时间
   await next();
   const ms = new Date().getTime() - start;
   console.log(`${ctx.request.method} || ${ctx.request.url} || ${ms}ms`)
+  console.log(isProduction, '2----------------', process.env.NODE_ENV)
 })
 
 if (! isProduction) {
