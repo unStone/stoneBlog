@@ -47,10 +47,11 @@ $(function() {
       title: title,
       abstract: abstract,
       srticleId: srticleId
-    }
+    };
+    console.log(data);
     $.ajax({
       type: 'POST',
-      url: '/api/stone/blog/simditor',
+      url: '/stone/api/blog/simditor',
       data: data,
       success: function(res) {
         console.log(res);
