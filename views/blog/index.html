@@ -1,0 +1,57 @@
+{% extends "../layout/base.html" %}
+{% block head %}
+<link href="/static/css/blog/index.css" rel="stylesheet">
+{% endblock %}
+{% block main %}
+<div class="container">
+    <div class="lists">
+        <div class="list-hd">
+            <div class="hd-pic"></div>
+            <div class="introduce">
+                <div class="introduce-name">名字</div>
+                <div class="introduce-introduce">简介简介简介简介简介简介简介简介。</div>
+            </div>
+        </div>
+        <div class="list-ft">
+            <ul>
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">个人介绍</a>
+                </li>
+                <li>
+                    <a href="#">个人爱好</a>
+                </li>
+                <li>
+                    <a href="#">个人学习</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg">
+        <div class="article-list" id="wrapper">
+            <div class="all-article">
+                <div class="article">
+                    <div class="title">博客开放</div>
+                    <div class="abstract">博客开放博客开放博客开放博客开放博客开放博客开放博客开放</div>
+                    <div class="time">2017年1月21日</div>
+                </div>
+                <div class="article"></div>
+                <div class="article"></div>
+                <div class="article"></div>
+                <div class="article"></div>
+                <div class="article"></div>
+                <div class="article"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script src="//cdn.bootcss.com/iScroll/5.0.0/iscroll.min.js"></script>
+<script src="//cdn.bootcss.com/moment.js/2.16.0/moment.min.js"></script>
+<script src="/static/js/blog/index.js"></script>
+{% endblock %}
