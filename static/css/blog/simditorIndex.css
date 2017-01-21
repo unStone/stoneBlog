@@ -1,0 +1,42 @@
+body {margin: 0; width: 100%; height: 100%; overflow: hidden}
+
+/**
+正文
+*/
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 30px 0 0 30px;
+	background-image: url('http://img.hb.aicdn.com/b32d46f95be206656710129765696df5bc19ebb61fd32-d3X9U7_fw658');
+	background-size: cover;
+	background-position: center center;
+}
+.top {
+  width: 750px;
+  background-color: rgba(255,255,255,.7);
+  padding: 10px 0 30px 10px;
+  color: #333;
+}
+.top input {
+  width: 300px;
+}
+.srticle-id-fix {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #7cb0cc;
+}
+.srticle-id a:hover {
+	color: #333;
+	text-decoration: none;
+	font-weight: 700;
+}
+/**
+编辑器样式
+*/
+.simditor {
+  width: 750px;
+}

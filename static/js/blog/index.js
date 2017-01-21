@@ -1,4 +1,4 @@
-var windowHeight, myScroll;
+var myScroll;
 
 $(function() {
     //控制整个页面高度与可视高度一样高
