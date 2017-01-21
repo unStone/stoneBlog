@@ -32,7 +32,7 @@ app.use(templating('view', {
 
 // add controllers:
 app.use(controller());
-
+ 
 AV.init({
   appId: process.env.LEANCLOUD_APP_ID,
   appKey: process.env.LEANCLOUD_APP_KEY,
