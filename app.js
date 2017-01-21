@@ -33,10 +33,6 @@ app.use(templating('view', {
 // add controllers:
 app.use(controller());
 
-app.listen(36029);
-console.log('app started at port 36029...')
-
-
 AV.init({
   appId: process.env.LEANCLOUD_APP_ID,
   appKey: process.env.LEANCLOUD_APP_KEY,
