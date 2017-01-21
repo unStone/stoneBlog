@@ -16,4 +16,5 @@ npm install
 
 ```
 npm start
+可检测代码，自动运行。
 ```
