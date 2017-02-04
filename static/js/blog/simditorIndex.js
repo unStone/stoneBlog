@@ -1,4 +1,4 @@
-var title, abstract, srticleId, data;
+var title, abstract, srticleId, content, data;
 
 $(function() {
   $('.container').height($(window).height())
@@ -42,11 +42,13 @@ $(function() {
     title = $('.title-input').val();
     abstract = $('.abstract-input').val();
     srticleId = $('.srticle-id-input').val();
+    content = $('.simditor-body').html();
 
     data = {
       title: title,
       abstract: abstract,
-      srticleId: srticleId
+      srticleId: srticleId,
+      content: content
     };
     console.log(data);
     $.ajax({
