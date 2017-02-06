@@ -134,3 +134,87 @@ ul {list-style: none; padding: 0; }
     right: 2px;
     overflow: hidden;
 }
+
+@media screen and (max-width: 400px) {
+	.container {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	.lists {
+	  position: absolute;
+    top: 0;
+    left: 0;
+    height: 110px;
+    width: 100%;
+		padding: 0;
+    background-color: rgba(255, 255, 255, .7);
+    z-index: 99;
+	}
+	.list-hd {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 110px;
+	}
+	.hd-pic {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #999;
+    border-radius: 25px;
+    background-image: url(https://s.xiaoyuanhao.com/file/a42d3fc6-c974-4469-9b65-2edf46890bb3.jpg);
+    background-size: cover;
+    background-position: center center;
+	}
+	.introduce {
+		position: absolute;
+		top: 10px;
+		left: 80px;
+		right: 0;
+	}
+	.introduce-name {
+    font-weight: 700;
+    text-align: left; 
+		margin-left: 5px;
+	}
+	.introduce-introduce {
+    font-size: 12px;
+		text-indent: 0; 
+	}
+	.list-ft {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 10px;
+	}
+	.list-ft ul {
+    padding-left: 10px;
+		margin: 0;
+		display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+		-webkit-box-pack:justify;
+		-webkit-justify-content: space-around;
+		justify-content: space-around;
+		-webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+	}
+	.article-list {
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 300px;
+		margin: 0;
+    background-color: rgba(255, 255, 255, .7);
+    overflow-y: auto;
+}
+}
